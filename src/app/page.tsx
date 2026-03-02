@@ -44,11 +44,17 @@ export default function Home() {
                 {/* Hero Section - stylized gradient card */}
                 <section className="mb-20 md:mb-28">
                     <div className="relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
-                        <img
-                            src="/img/banner.jpg"
-                            alt="Banner"
-                            className="w-full h-auto object-cover rounded-2xl"
-                        />
+                        <a
+                            href="https://ditto.fm/boem-bam"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/img/banner.jpg"
+                                alt="Banner"
+                                className="w-full h-auto object-cover rounded-2xl"
+                            />
+                        </a>
                     </div>
                 </section>
 
@@ -176,7 +182,7 @@ export default function Home() {
                                     onClick={() => setShowShopPopup(true)}
                                     className="btn-hover block px-8 py-3 rounded-full text-sm font-bold tracking-[0.15em] text-white"
                                 >
-                                    Shop
+                                    SHOP
                                 </button>
                             </li>
                             <li>
@@ -196,7 +202,7 @@ export default function Home() {
                 {/* Copyright */}
                 <div className="py-8 text-center border-t border-white/10">
                     <p className="text-sm text-white/50 tracking-wide">
-                        © 2026 42GRAM. JUICED UNICORN. All rights reserved.
+                        © 2026. 42GRAM. JUICED UNICORN. All rights reserved.
                     </p>
                     {showShopPopup && (
                         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
@@ -218,6 +224,7 @@ export default function Home() {
         </div>
     );
 }
+
 
 
 
