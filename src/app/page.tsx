@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 export default function Home() {
     const [showShopPopup, setShowShopPopup] = useState(false);
@@ -217,5 +218,6 @@ export default function Home() {
         </div>
     );
 }
+
 
 
