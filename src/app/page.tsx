@@ -1,4 +1,6 @@
+import { useState } from "react";
 export default function Home() {
+    const [showShopPopup, setShowShopPopup] = useState(false);
     return (
         <div className="min-h-screen relative overflow-hidden">
             {/* Star pattern background */}
@@ -169,12 +171,12 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="#shop"
+                                <button
+                                    onClick={() => setShowShopPopup(true)}
                                     className="btn-hover block px-8 py-3 rounded-full text-sm font-bold tracking-[0.15em] text-white"
                                 >
                                     Shop
-                                </a>
+                                </button>
                             </li>
                             <li>
                                 <a
@@ -195,8 +197,24 @@ export default function Home() {
                     <p className="text-sm text-white/50 tracking-wide">
                         © 2026 42GRAM. JUICED UNICORN. All rights reserved.
                     </p>
+                    {showShopPopup && (
+                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+                            <div className="bg-white text-black px-10 py-8 rounded-2xl shadow-2xl text-center animate-fade-in-up">
+                                <h2 className="text-2xl font-bold mb-4 tracking-widest">
+                                    DE 42 SHOP KOMT ASAP!
+                                </h2>
+                                <button
+                                    onClick={() => setShowShopPopup(false)}
+                                    className="mt-4 px-6 py-2 bg-black text-white rounded-full text-sm font-bold tracking-wide hover:opacity-80 transition"
+                                >
+                                    CLOSE
+                                </button>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </footer>
         </div>
     );
 }
+
