@@ -103,7 +103,7 @@ export default function Home() {
                                 <div className="space-y-3">
                                     <p className="uppercase text-xs tracking-[0.15em] text-white/70">Facebook</p>
                                     <a
-                                        href="https://fb.me/ditis42gram"
+                                        href="https://www.facebook.com/ditis42GRAM"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="link-hover text-lg font-medium inline-block text-white"
@@ -180,7 +180,7 @@ export default function Home() {
                             </li>
                             <li>
                                 <a
-                                    href="https://fb.me/ditis42gram"
+                                    href="https://www.facebook.com/ditis42GRAM"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-hover block px-8 py-3 rounded-full text-sm font-bold tracking-[0.15em] text-white"
@@ -217,4 +217,5 @@ export default function Home() {
         </div>
     );
 }
+
 
