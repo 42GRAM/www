@@ -146,7 +146,7 @@ export default function Home() {
             <footer className="relative z-10 mt-auto px-4 md:px-20 border-t border-white/15 animate-fade-in-up animate-delay-400">
                 <div className="py-10 md:py-12">
                     <nav>
-                        <ul className="flex flex-col md:flex-row justify-center md:justify-between gap-4 md:gap-0 uppercase text-center">
+                       <ul className="flex flex-col items-center md:flex-row md:items-stretch justify-center md:justify-between gap-4 md:gap-0 uppercase text-center">
                             <li>
                                 <a
                                     href="https://instagram.com/ditis42gram"
@@ -224,6 +224,7 @@ export default function Home() {
         </div>
     );
 }
+
 
 
 
