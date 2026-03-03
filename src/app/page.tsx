@@ -4,13 +4,14 @@ export default function Home() {
     const [showShopPopup, setShowShopPopup] = useState(false);
     return (
         <div className="min-h-screen relative overflow-hidden">
-            {/* Star pattern background */}
+            {/* Repeating monogram background */}
             <div
-                className="fixed inset-0 z-0 opacity-60"
+                className="fixed inset-0 z-0 opacity-15"
                 style={{
-                    backgroundImage: `url('/img/bg.png')`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
+                    backgroundImage: "url('/img/42monogram.jpg')",
+                    backgroundRepeat: "repeat",
+                    backgroundSize: "166px 166px",
+                    backgroundPosition: "top left",
                 }}
             />
 
@@ -224,6 +225,7 @@ export default function Home() {
         </div>
     );
 }
+
 
 
 
