@@ -9,7 +9,7 @@ export default function Home() {
             
                 {/* Repeating monogram background */}
                 <div
-                    className="fixed inset-0 z-0 opacity-15"
+                    className="fixed inset-0 z-0 opacity-55"
                     style={{
                         backgroundImage: "url('/img/42monogram.jpg')",
                         backgroundRepeat: "repeat",
@@ -228,6 +228,7 @@ export default function Home() {
         </div>
     );
 }
+
 
 
 
